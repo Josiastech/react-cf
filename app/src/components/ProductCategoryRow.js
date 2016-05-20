@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react"
 
+export default class ProductCategoryRow extends React.Component {
 
-export default class ProductCategoryRow extends React.component {
-	constructor(){
-		super();
-	}
+  constructor() {
+    super();
+  }
+  
+  render() {
+    return(
+      <p>Category</p>
+    )
+  }
 
-	render(){
-		return(
-			<h4>ProductRow</h4>
-		)
-	}
 }

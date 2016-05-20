@@ -1,18 +1,21 @@
-import React from "react";
-import SearchBar from './SearchBar.js'
-import ProductTable from './ProductTable.js'
+import React from "react"
+
+import SearchBar from "./SearchBar.js"
+import ProductTable from "./ProductTable.js"
 
 export default class FilterableProductTable extends React.Component {
-	constructor(){
-		super()
-	}
+  
+  constructor() {
+    super();
+  }
 
-	render() {
-		return(
-			<div>
-				<SearchBar/>
-				<ProductTable/>
-			</div>
-		)
-	}
+  render() {
+    return (
+      <div>
+        <SearchBar/>
+        <ProductTable/>
+      </div>
+    )
+  }
+
 }
