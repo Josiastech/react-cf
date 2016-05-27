@@ -7,9 +7,17 @@ export default class ProductRow extends React.Component {
   }
 
   render() {
-    return(
-      <p>Product</p>
-    )
+    var name = this.props.product.stocked ?
+      this.props.product.name :
+      <span>
+        {this.props.product.name}
+      </span>;
+    return (
+      <div>
+        <p>{name}</p>
+        <p>{this.props.product.price}</p>
+      </div>
+    );
   }
 
 }

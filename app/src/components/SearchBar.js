@@ -1,16 +1,19 @@
-import React from "react";
+import React from "react"
 
 export default class SearchBar extends React.Component {
-	constructor(){
-		super();
-	}
+  
+  constructor() {
+    super();
+  }
 
-	render(){
-		return (
-			<div>
-				<input type="text"/>
-				<input type="checkbox"/>
-			</div>
-		)
-	}
+  render() {
+    return (
+      <form>
+        <input onChange={this.props.onChange} type="text" placeholder='Search...'/>
+        <input type="checkbox"/>
+        Solo productos en stock
+      </form>
+    )
+  }
+
 }
